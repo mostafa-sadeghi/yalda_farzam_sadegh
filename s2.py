@@ -18,8 +18,9 @@
 # برنامه ای بنویسید که سه عدد را پرینت نماید
 # برنامه ای بنویسید که مجموع سه عدد را پرینت نماید
 
-
-
+# print("reza", "tina","sara")
+# print(12, 13, 69)
+# print(10 + 20 + 30)
 # x = 1
 # print(x)
 
@@ -36,20 +37,20 @@
 # print(a / b)
 
 
-number1 = 5
-number2 = 2
+# number1 = 5
+# number2 = 2
 
-print(number1 / number2)
-print(number1 // number2)# تقسیم صحیح
+# print(number1 / number2)
+# print(number1 // number2)# تقسیم صحیح
 
-print(number1 % number2)
+# print(number1 % number2)
 
 
-z = 1 + 2 * 3
-print(z)
-z = (1 + 2) * 3
-print(z)
+# z = 1 + 2 * 3
+# print(z)
+# z = (1 + 2) * 3
+# print(z)
 
-average = 90 + 86 + 71 + 100 + 98 / 5
+average = (90 + 86 + 71 + 100 + 98) / 5
 print(average)
 # why ???
