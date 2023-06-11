@@ -23,6 +23,17 @@
 # کارهای بالا را برای دو عدد اعشاری انجام دهید
 
 
+# number1 = int(input('Enter a number: '))
+# number2 = int(input('Enter a number: '))
+# print("number1 + number2 =", number1 + number2)
+# print(f"{number1} + {number2} =", number1 + number2)
+# print("number1 - number2 =", number1 - number2)
+# به عنوان تمرین برای بقیه هم انجام دهید
+# print("number1 * number2 =", number1 * number2)
+# print("number1 / number2 =", number1 / number2)
+# print("number1 / number2 =", number1 // number2)
+
+
 # a = 4
 # b = 5
 
@@ -41,14 +52,29 @@
 
 # if a > b:
 #     print("a is greater than b")
-
+# TODO
 # تمرین:
 # برنامه ای بنویسید که دو عدد از ورودی دریافت نماید و با هم مقایسه کند
 # نتیجه مقایسه را نیز بنویسید
 
 
+number1 = float(input('Enter a number: '))
+number2 = float(input('Enter a number: '))
 
+# print(number1 == number2)
+# print(number1 >= number2)
+# print(number1 <= number2)
+# print(number1 != number2)
+# print(number1 > number2)
+# print(number1 < number2)
 
+if number1 == number2:
+    print(f"{number1} = {number2}")
+elif number1 >= number2:
+    print(f"{number1} >= {number2}")
+
+# TODO
+# برای بقیه هم انجام دهید
 
 # a = 1
 
