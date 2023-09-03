@@ -84,6 +84,18 @@ scoreboard = create_turtle("square", "white")
 scoreboard.goto(0, 260)
 scoreboard.ht()
 
+bomb = create_turtle("circle", "darkgreen")
+change_position(bomb)
+
+
+def onclose():
+    global running
+    running = False
+
+
+root = main_surface._root
+root.protocol("WM_DELETE_WINDOW", onclose)
+
 
 snake_tails = []
 main_surface.tracer(False)
@@ -92,6 +104,21 @@ while running:
     main_surface.update()
     scoreboard.clear()
     scoreboard.write(f"Score: {score}", align="center", font=("arial", 22))
+
+    if snake_head.distance(bomb) < 20:
+        score -= 1
+        if len(snake_tails) > 0:
+            change_position(bomb)
+            snake_tails[-1].ht()
+            del snake_tails[-1]
+        if score < 0:
+            score = 0
+            snake_head.goto(0, 0)
+            snake_head.direction = ""
+            for tail in snake_tails:
+                tail.ht()
+            snake_tails.clear()
+
     if snake_head.distance(snake_food) < 20:
         change_position(snake_food)
         score += 1
